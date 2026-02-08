@@ -152,7 +152,6 @@ MySQL
 - Timeline visualization
 - Slack / GitHub integration
 
-
 ## 🏁 Status
 
 ✅ MVP ready to build
