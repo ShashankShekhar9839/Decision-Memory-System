@@ -1,3 +1,6 @@
+module Api 
+  module V1 
+
 class HealthController < ApplicationController
   def index
     db_status = database_connected?
@@ -16,4 +19,7 @@ class HealthController < ApplicationController
   rescue StandardError
     false
   end
+end
+
+end 
 end

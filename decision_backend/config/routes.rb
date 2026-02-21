@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-   get "/health", to: "health#index"
-  resources :decisions, only: [:index, :create, :show, :update, :destroy]
+  namespace :api do
+    namespace :v1 do
+      resources :decisions
+      get "health", to: "health#index"
+    end
+  end
 end
