@@ -48,3 +48,7 @@ end
 gem "mysql2", "~> 0.5"
 
 gem "dotenv-rails", groups: [:development, :test]
+
+gem 'bcrypt'
+
+gem 'jwt'
