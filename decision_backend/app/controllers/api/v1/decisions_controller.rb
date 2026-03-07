@@ -1,6 +1,8 @@
 module Api
   module V1
     class DecisionsController < ApplicationController
+      before_action :authenticate_user!
+      before_action :require_admin!, only: [:destroy]
       before_action :set_decision, only: [:show, :update, :destroy]
 
    def index
